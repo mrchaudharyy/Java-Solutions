@@ -1,23 +1,19 @@
 package practise;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class MyApp {
-	public static void main(String[] args) {
-		MyApp app = new MyApp();
-}
-}
-class Customer {
+    public static void main(String[] args) {
+       String myString = "abcda";
 
-	String name;
+        String collect = Arrays.asList(myString.split(""))
+                .stream()
+                .distinct()
+                .collect(Collectors.joining());
 
-	public Customer(String name) {
-		this.name = name;
-	}
-
-	public String getName() {
-		return this.name;
-	}
-
-	public final void setName(String name) {
-		this.name = name;
-	}
+        System.out.println(collect);
+    }
 }

@@ -13,7 +13,7 @@ import java.util.Scanner;
  * 
 */
 
-public class SubarraysHavingNegativeSums {
+public class  SubarraysHavingNegativeSums {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

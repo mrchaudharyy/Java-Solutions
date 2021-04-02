@@ -20,8 +20,7 @@ public class QueueImpl {
 		if(rear == maxSize - 1) { // if reached end of array while inserting. Set rear to -1 so that insertion can began from First index.
 			rear = -1;
 		}
-		rear++;
-		queueArray[rear] = value;
+		queueArray[rear++] = value;
 		nItems++;
 	}
 

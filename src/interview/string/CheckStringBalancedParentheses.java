@@ -17,7 +17,7 @@ public class CheckStringBalancedParentheses {
 
 	private static boolean validate(String input) {
 		Stack<Character> stack = new Stack<>();
-		Map<Character, Character> map = new HashMap<Character, Character>();
+		Map<Character, Character> map = new HashMap<>();
 		map.put('{', '}');
 		map.put('(', ')');
 		map.put('[', ']');

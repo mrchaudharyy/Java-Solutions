@@ -2,23 +2,27 @@ package interview.array;
 
 public class FindLargestTwoNumbers {
 
-	public static void main(String[] args) {
-		int arr[] = { 1, 5, 100, 20, 500, 90 };
-		findNumbers(arr);
-	}
+    public static void main(String[] args) {
+        int arr[] = {10, 5, 10};
+        findNumbers(arr);
+    }
 
-	private static void findNumbers(int arr[]) {
-		int max1 = Integer.MIN_VALUE;
-		int max2 = Integer.MIN_VALUE;
-		for (int number : arr) {
-			if (number > max1) {
-				max2 = max1;
-				max1 = number;
-			} else if (number > max2) {
-				max2 = number;
-			}
-		}
-		System.out.println("First Largest " + max1);
-		System.out.println("Second Largest " + max2);
-	}
+    private static void findNumbers(int arr[]) {
+        int first = Integer.MIN_VALUE;
+        int second = Integer.MIN_VALUE;
+        for (int number : arr) {
+            if (number > first) {
+                second = first;
+                first = number;
+            } else if (number > second && number != first) {
+                second = number;
+            }
+        }
+        System.out.println("First Largest " + first);
+        if (second == Integer.MIN_VALUE) {
+            System.out.println("Second Largest not found");
+        } else {
+            System.out.println("Second Largest " + second);
+        }
+    }
 }

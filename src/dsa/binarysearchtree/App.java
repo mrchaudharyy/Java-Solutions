@@ -3,23 +3,15 @@ package dsa.binarysearchtree;
 public class App{
 
 	public static void main(String[] args) {
-		BST tree = new BST();
-		
-		tree.insert(50, 1);
-		tree.insert(40, 2);
-		tree.insert(60, 3);
-		tree.insert(30, 4);
-		tree.insert(70, 5);
-		
-		//System.out.println(tree.findMix());
-		//System.out.println(tree.findMax());
-		
-		tree.printBST();
-		
-		tree.deleteNode(60);
-		
-		tree.printBST();
-
+		Node root = new Node(10);
+		root.insert(4);
+		root.insert(7);
+		root.insert(3);
+		root.insert(9);
+		root.insert(6);
+		root.insert(8);
+		root.insert(1);
+		System.out.println(root.contains(7));
 	}
 
 }

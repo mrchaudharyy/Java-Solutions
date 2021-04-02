@@ -6,23 +6,24 @@ import java.util.Arrays;
 public class SelectionSort {
 
 	public static void main(String[] args) {
-		int[] arr = { 2, 5, 1, 17, 20, 0, 15 };
+		int[] arr = { 5,4,3,1,2 };
 		System.out.println(Arrays.toString(sortElement(arr)));
-
 	}
 
 	public static int[] sortElement(int[] arr) {
 
-		for (int i = 0; i < arr.length - 1; i++) {
-			int minimum = i; // set minimum to current index and compare with entire array
-			for (int j = i + 1; j < arr.length; j++) {
-				if (arr[j] < arr[minimum]) { // if any of the element is small then make it minimum and the cycle repeats
-					minimum = j;
+		for (int lastUnsortedIndex = arr.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) { // start from last (let it be unsorted array)
+			int largest = 0; // assume first element to be largest
+			for (int i = 1; i <= lastUnsortedIndex; i++) {
+				if (arr[i] > arr[largest]) { // find if any other element is largest
+					largest = i; // make it largest
 				}
 			}
-			int temp = arr[i]; // swapping current minimum to previous minimum
-			arr[i] = arr[minimum];
-			arr[minimum] = temp;
+			// swap largest element to the last index here
+			// this way, largest element will start moving to the end of the array
+			int temp = arr[largest];
+			arr[largest] = arr[lastUnsortedIndex];
+			arr[lastUnsortedIndex] = temp;
 		}
 
 		return arr;
