@@ -3,7 +3,7 @@ package interview.array;
 public class FindPossibleTriangles {
 
     public static void main(String[] args) {
-        int[] arr = {6, 4, 9, 7, 8};
+        int[] arr = {4, 3, 9, 8};
         int numberOfTriangles = findNumberOfTriangles(arr, arr.length);
         System.out.println("Possible triangles :: " + numberOfTriangles);
     }

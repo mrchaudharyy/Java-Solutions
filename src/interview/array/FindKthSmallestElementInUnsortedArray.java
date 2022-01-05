@@ -5,13 +5,13 @@ import java.util.Arrays;
 public class FindKthSmallestElementInUnsortedArray {
 
 	public static void main(String[] args) {
-		int unSortedArray[] = { 0, 10, 31, 19, 8 };
+		int unSortedArray[] = { 13, 9, 4, 21, 1, 17 };
 		findNumber(unSortedArray, 2);
 	}
 
 	private static void findNumber(int arr[], int k) {
-		sortElement(arr); 
-		Arrays.sort(arr); // or use sort method to sort elements.
+		sortElement(arr);
+		// Arrays.sort(arr); // or use sort method to sort elements.
 		
 		// Kth smallest will be k-1. Suppose K = 4 then in sorted array element on index
 		// position 3 will be Kth element. i.e k-1 (because indexing starts from 0)

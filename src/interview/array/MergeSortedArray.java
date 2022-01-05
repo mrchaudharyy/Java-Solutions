@@ -19,12 +19,11 @@ public class MergeSortedArray {
 			if (arr[i] < arr1[j]) {
 				mergedArray[k] = arr[i];
 				i++;
-				k++;
 			} else {
 				mergedArray[k] = arr1[j];
 				j++;
-				k++;
 			}
+			k++;
 		}
 
 		while (i < arr.length) {

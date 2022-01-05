@@ -16,7 +16,7 @@ public class FindUniqueNumberThatIsNotRepeatedTwice {
 			if (!elements.contains(i)) {
 				elements.add(i);
 			} else {
-				elements.remove(new Integer(i));
+				elements.remove(Integer.valueOf(i));
 			}
 		}
 		System.out.println(elements.get(0));

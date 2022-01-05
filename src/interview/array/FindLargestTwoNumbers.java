@@ -3,7 +3,7 @@ package interview.array;
 public class FindLargestTwoNumbers {
 
     public static void main(String[] args) {
-        int arr[] = {10, 5, 10};
+        int arr[] = {0, 5, 18, 18, 34, 12};
         findNumbers(arr);
     }
 

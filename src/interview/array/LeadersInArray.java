@@ -3,7 +3,7 @@ package interview.array;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
 Given an array A of positive integers. Your task is to find the leaders in the array.
 An element of array is leader if it is greater than or equal to all the elements to its right side.
 The rightmost element is always a leader.
@@ -11,7 +11,7 @@ The rightmost element is always a leader.
 public class LeadersInArray {
 
     public static void main(String[] args) {
-        int[] arr = {9, 17, 40, 3, 50, 2};
+        int[] arr = {19, 56, 23, 3, 55, 2};
         List<Integer> leaders = leaders1(arr);
         System.out.println(leaders);
     }

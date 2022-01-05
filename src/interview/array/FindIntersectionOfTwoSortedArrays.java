@@ -3,8 +3,8 @@ package interview.array;
 public class FindIntersectionOfTwoSortedArrays {
 
 	public static void main(String[] args) {
-		int[] arr1 = { 21, 34, 41, 22, 35 };
-		int[] arr2 = { 61, 34, 45, 21, 11 };
+		int[] arr1 = { 21, 29, 34, 41, 56 };
+		int[] arr2 = { 32, 38, 41, 56, 66 };
 		StringBuilder intersect = new StringBuilder();
 
 		for (int i = 0; i < arr1.length; i++) {
