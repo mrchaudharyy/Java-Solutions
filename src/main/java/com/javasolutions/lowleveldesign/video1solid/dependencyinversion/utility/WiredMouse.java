@@ -1,0 +1,24 @@
+package com.javasolutions.lowleveldesign.video1solid.dependencyinversion.utility;
+
+// Low-level module - concrete implementation
+public class WiredMouse implements Mouse {
+    private final String connectionType;
+    private final String company;
+    private final String modelVersion;
+    private final String color;
+
+    public WiredMouse(String connectionType, String company, String modelVersion, String color) {
+        this.connectionType = connectionType;
+        this.company = company;
+        this.modelVersion = modelVersion;
+        this.color = color;
+    }
+
+    public void getSpecifications() {
+        System.out.println("===> Wired Mouse");
+        System.out.println("Connection Type: " + connectionType);
+        System.out.println("Company: " + company);
+        System.out.println("Model Version: " + modelVersion);
+        System.out.println("Color: " + color);
+    }
+}
